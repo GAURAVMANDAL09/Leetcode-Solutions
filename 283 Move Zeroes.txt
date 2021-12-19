@@ -1,0 +1,25 @@
+ void moveZeroes(vector<int>& nums) {
+        int n = nums.size();
+        for(int cur=0,lastnonzero=0; cur<n; cur++) {
+            if(nums[cur]!=0) {
+                swap(nums[lastnonzero++],nums[cur]);
+            }
+        }
+    }
+ 
+ void moveZeroes(vector<int>& nums) {
+        int n = nums.size();
+        int j=0;
+        for(int i=0;i<n;i++) {
+            if(nums[i]!=0) {
+                nums[j]=nums[i];
+                j++;
+            }
+            else {
+                
+            }
+        }
+        for(int i=j;i<n;i++) {
+            nums[i]=0;
+        } 
+    }
